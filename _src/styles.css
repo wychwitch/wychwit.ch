@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .prose {
+    @apply prose-headings:underline}
+
+  .prose-xl {
+    @apply prose-headings:underline }
+}
+
+.prose h1 {
+    font-weight: bold;
+}

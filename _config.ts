@@ -24,11 +24,13 @@ import terser from "lume/plugins/terser.ts";
 import postcss from "lume/plugins/postcss.ts";
 import transform_images from "lume/plugins/transform_images.ts";
 import toml from "lume/plugins/toml.ts";
+import typography from "npm:@tailwindcss/typography";
 
 const site = lume({
  server: {
-    port: 8000,
+    port: 8088,
   },
+    src: "./_src",
 });
 
 site.use(attributes());
@@ -42,7 +44,28 @@ site.use(nav());
 site.use(pagefind());
 site.use(picture());
 site.use(prism());
-site.use(tailwindcss());
+site.use(tailwindcss({
+      // Extract the classes from HTML and JSX files
+  extensions: [".html", ".jsx"],
+
+  // Your Tailwind options, like the theme colors and fonts
+  options: {
+    theme: {
+      colors: {
+          background: "#efe6f2",
+          primary: "#8369ac",
+          secondary: "#ccb0d4",
+          accent: "#9d49b7",
+      },
+      fontFamily: {
+        sans: ["Graphik", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+      },
+    },
+    plugins: [typography],
+  },
+}));
+site.use(postcss(/* Options */));
 site.use(purgecss());
 site.use(redirects());
 site.use(relations());
@@ -55,6 +78,6 @@ site.use(slugify_urls());
 site.use(terser());
 site.use(transform_images());
 site.use(toml());
-site.use(postcss(/* Options */));
+
 
 export default site;
