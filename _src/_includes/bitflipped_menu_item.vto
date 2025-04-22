@@ -1,5 +1,5 @@
 {{ if item.data.url && !item.data.hidden}}
-  <a class="text-white text-2xl bg-accent p-2 rounded hover:bg-primary" href="{{ item.data.url }}">
+  <a class="text-xl p-2 hover:text-primary" href="{{ item.data.url }}">
     {{ item.data.title }}
   </a>
 {{ /if }}
@@ -7,7 +7,7 @@
 <ul>
   {{ for child of item.children }}
   <li>
-    {{ include "./menu_item.vto" { item: child } }}
+    {{ include "./bitflipped_menu_item.vto" { item: child } }}
   </li>
   {{ /for }}
 </ul>

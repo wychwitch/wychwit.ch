@@ -1,5 +1,6 @@
 ---
-title: This is wych's Grimoire
+title: Wych Grimoire
+layout: main_index.vto
 ---
 
 # This is the index

@@ -25,13 +25,20 @@ import postcss from "lume/plugins/postcss.ts";
 import transform_images from "lume/plugins/transform_images.ts";
 import toml from "lume/plugins/toml.ts";
 import typography from "npm:@tailwindcss/typography";
+import remark from "lume/plugins/remark.ts";
 
+
+const markdown = {
+  options: {
+    breaks: true,
+  },
+};
 const site = lume({
  server: {
     port: 8088,
   },
     src: "./_src",
-});
+}, { markdown });
 
 site.use(attributes());
 site.use(date());
@@ -50,19 +57,23 @@ site.use(tailwindcss({
 
   // Your Tailwind options, like the theme colors and fonts
   options: {
+    plugins: [typography],
     theme: {
       colors: {
           background: "#efe6f2",
-          primary: "#8369ac",
-          secondary: "#ccb0d4",
-          accent: "#9d49b7",
+        white: "#FFFFFF",
+          primary: "#5a3970",
+          secondary: "#caaccc",
+          accent: "#cc7a9c",
+        dark: "2E282A",
+        bf_da: "#88d6a4",
+        bf_fa: "#078446",
       },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],
         serif: ["Merriweather", "serif"],
       },
     },
-    plugins: [typography],
   },
 }));
 site.use(postcss(/* Options */));
@@ -78,6 +89,8 @@ site.use(slugify_urls());
 site.use(terser());
 site.use(transform_images());
 site.use(toml());
+
+
 
 
 export default site;

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+ <title>{{ title }}</title>
+ <link rel="stylesheet" href={{css}} />
+  </head>
+  <body class="flex flex-col items-center bg-background">
+  <ul class="menu w-100% flex flex-row justify-center">
+    {{ if url != "/" }}
+    <li class="w-fit h-fit m-8">
+      <a class="text-white text-2xl bg-accent p-2 rounded hover:bg-primary" href="/">
+        home
+      </a>
+    </li>
+
+    {{ /if }}
+    {{ for item of nav.menu().children }}
+      <li class="w-fit h-fit m-8">
+        {{ include "./menu_item.vto" { item } }}
+      </li>
+    {{ /for }}
+  </ul>
+
+  <section class="w-8/12 m-24 h-fit p-4 border-solid border-secondary border-4 rounded">
+    <article class="md">
+    {{ content }}
+    </article>
+  </section>
+  </body>
+</html>

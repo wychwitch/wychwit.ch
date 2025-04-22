@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+ <title>{{ title }}</title>
+ <link rel="stylesheet" href={{css}} />
+  </head>
+  <body class="flex flex-col items-center bg-white">
+  <ul class="menu w-100% flex flex-row justify-center">
+    {{ if url != "/" }}
+    <li class="w-fit h-fit ">
+      <a class="text-xl p-2 rounded hover:text-primary" href="/">
+        Home
+      </a>
+    </li>
+    {{ /if }}
+    {{ for item of nav.menu().children }}
+      <li>
+        {{ include "./bitflipped_menu_item.vto" { item } }}
+      </li>
+    {{ /for }}
+  </ul>
+
+  <section class="m-24 h-fit p-4 bg-bitflipped">
+    <article class="md min-h-60">
+    {{ content }}
+    </article>
+    <ul class="next text-left">
+    {{ for item of nav.menu(url).children }}
+    <li>
+    ><a href={{item.data.url}}>{{item.data.title}}</a>
+    </li>
+    {{ /for }}
+    </ul>
+  </section>
+  </body>
+</html>

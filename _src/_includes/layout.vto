@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
  <title>{{ title }}</title>
- <link rel="stylesheet" href="/styles.css" />
+ <link rel="stylesheet" href={{css}} />
   </head>
   <body class="flex justify-center bg-red-100">
   <ul class="menu">
     {{ for item of nav.menu().children }}
       <li>
-        {{ include "templates/menu_item.vto" { item } }}
+        {{ include "./menu_item.vto" { item } }}
       </li>
     {{ /for }}
   </ul>
 
-  <section class="m-24 h-fit p-4 bg-background prose prose-xl prose-h1:text-2xl">
+  <section class="m-24 h-fit p-4 bg-background ">
+    <article class="md">
     {{ content }}
+    </article>
   </section>
   </body>
 </html>
