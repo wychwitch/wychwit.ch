@@ -1,9 +1,7 @@
 const data = {
-  layout: "bitflipped_page.vto",
-  css: "/bitflipped.css",
+  layout: "layout.vto",
   hidden: true,
 }
-
 
 export function url(page){
   if (page.data?.num > 0){

@@ -26,6 +26,7 @@ import transform_images from "lume/plugins/transform_images.ts";
 import toml from "lume/plugins/toml.ts";
 import typography from "npm:@tailwindcss/typography";
 import remark from "lume/plugins/remark.ts";
+import bitflipped_shortcodes from "./_src/_scripts/bitflipped_shortcodes.js";
 
 
 const markdown = {
@@ -62,12 +63,14 @@ site.use(tailwindcss({
       colors: {
           background: "#efe6f2",
         white: "#FFFFFF",
+        black: "#000000",
           primary: "#5a3970",
           secondary: "#caaccc",
           accent: "#cc7a9c",
         dark: "2E282A",
         bf_da: "#88d6a4",
         bf_fa: "#078446",
+        bf_bg: "#efefef",
       },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],
@@ -90,7 +93,16 @@ site.use(terser());
 site.use(transform_images());
 site.use(toml());
 
-
+site.preprocess(['.md'], (pages) => {
+    for(const page of pages) {
+        if (typeof page.data.content !== "string") {
+            continue;
+        }
+        if (page.src.path.startsWith('/fic/bitflipped')) {
+           page.data.content = bitflipped_shortcodes(page.data.content);
+        }
+    }
+});
 
 
 export default site;
