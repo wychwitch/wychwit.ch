@@ -1,3 +1,4 @@
 [submodule "_src/fic/bitflipped"]
 	path = _src/fic/bitflipped
 	url = git@github.com:wychwitch/bitflipped.git
+	branch = main
