@@ -20,7 +20,7 @@ export default function bitflipped_shortcodes(result)
     },
     {
       reg: /^--pester\s*$/gm,
-      replacement: "<section class=\"border-2 border-black border-dashed p-2 m-2\">"
+      replacement: "<section class=\"border-4 lg:border-2 border-black border-dashed p-2 m-2\">"
     },
     {
       reg: /^--pester-begin-fa-da--/gm,

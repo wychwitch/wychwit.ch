@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
  <title>{{ title }}</title>
+ <link rel="stylesheet" href="/tailwind.css" />
  <link rel="stylesheet" href="/bitflipped.css" />
   </head>
   <body class="flex flex-col items-center bg-bf_bg">
-  <ul class="menu w-100% flex flex-row justify-center">
+  <ul class="text-6xl lg:text-4xl menu w-100% flex flex-row justify-center mt-8">
     {{ if url != "/" }}
     <li class="w-fit h-fit ">
-      <a class="text-xl p-2 rounded hover:text-primary" href="/">
+      <a class=" underline p-2 rounded hover:text-primary" href="/">
         Home
       </a>
     </li>
@@ -21,14 +22,14 @@
     {{ /for }}
   </ul>
 
-  <section class="m-24 h-fit p-4 bg-bitflipped">
-    <article class="md min-h-60">
+  <section class="mt-24 h-fit p-4 bg-bitflipped w-11/12 lg:w-1/2">
+    <article class="min-h-60 text-5xl lg:text-2xl">
     {{ content }}
     </article>
-    <ul class="next text-left">
+    <ul class="next text-left text-6xl lg:text-4xl w-fit ml-50">
     {{ for item of nav.menu(url).children }}
-    <li>
-    ><a href={{item.data.url}}>{{item.data.title}}</a>
+    <li class="my-4">
+    ><a class="underline" href={{item.data.url}}>{{item.data.basename}}.{{item.data.title}}</a>
     </li>
     {{ /for }}
     </ul>

@@ -59,39 +59,24 @@ site.use(tailwindcss({
   // Your Tailwind options, like the theme colors and fonts
   options: {
     plugins: [typography],
-    theme: {
-      colors: {
-          background: "#efe6f2",
-        white: "#FFFFFF",
-        black: "#000000",
-          primary: "#5a3970",
-          secondary: "#caaccc",
-          accent: "#cc7a9c",
-        dark: "2E282A",
-        bf_da: "#88d6a4",
-        bf_fa: "#078446",
-        bf_bg: "#efefef",
-      },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],
         serif: ["Merriweather", "serif"],
       },
-    },
   },
 }));
-site.use(postcss(/* Options */));
-site.use(purgecss());
+site.add("/tailwind.css")
+site.add("/styles.css")
+site.add("/bitflipped.css")
+//site.use(purgecss());
 site.use(redirects());
 site.use(relations());
 site.use(relative_urls());
 site.use(robots());
-site.use(sass());
+//site.use(sass());
 site.use(sheets());
 site.use(sitemap());
 site.use(slugify_urls());
-site.use(terser());
-site.use(transform_images());
-site.use(toml());
 
 site.preprocess(['.md'], (pages) => {
     for(const page of pages) {

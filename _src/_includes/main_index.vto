@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
  <title>{{ title }}</title>
- <link rel="stylesheet" href={{css}} />
+ <link rel="stylesheet" href="styles.css" />
+ <link rel="stylesheet" href="tailwind.css" />
   </head>
   <body class="flex flex-col items-center bg-background">
   <ul class="menu w-100% flex flex-row justify-center">
@@ -22,8 +23,8 @@
     {{ /for }}
   </ul>
 
-  <section class="w-8/12 m-24 h-fit p-4 border-solid border-secondary border-4 rounded">
-    <article class="md">
+  <section class="w-11/12 lg:w-1/2  mt-24 h-fit p-4 border-solid border-secondary border-8 xl:border-4 rounded">
+    <article class="prose prose-2xl prose-p:text-5xl prose-li:text-5xl lg:prose-base lg:prose-p:text-xl lg:prose-li:text-xl">
     {{ content }}
     </article>
   </section>

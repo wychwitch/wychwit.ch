@@ -1,23 +1,9 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@plugin "@tailwindcss/typography";
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-.md {
+body {
   font-family: "Courier Prime", monospace;
-  font-size: 1.1rem;
 }
 
 a {
   color: #0000EE;
-  text-decoration: underline;
 }
 
-.next a{
-  margin: 0.5rem;
-}
-
-.next{
-  font-size: 1.6rem;
-}

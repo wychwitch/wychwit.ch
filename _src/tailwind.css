@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@theme {
+  --color-bitflip-test: #CD5C5C;
+  --color-background: #efe6f2;
+  --color-primary: #5a3970;
+  --color-secondary: #caaccc;
+  --color-accent:#cc7a9c;
+  --color-dark:#2E282A;
+  --color-bf_da:#88d6a4;
+  --color-bf_fa:#078446;
+  --color-bf_bg:#efefef;
+
+}
