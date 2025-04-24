@@ -1,5 +1,5 @@
 const data = {
-  layout: "layout.vto",
+  layout: "main_page.vto",
   hidden: true,
 }
 
@@ -13,7 +13,7 @@ export function url(page){
   } else if (fic_num == 0 || page.data.basename.includes("index")){
     return "./"
   } else {
-    return `./${page.data.title}/`
+    return `./${page.data.basename}/`
   }
 }
 export default data;

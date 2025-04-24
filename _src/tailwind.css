@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Are+You+Serious&family=Coral+Pixels&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fascinate&family=Grand+Hotel&family=Homemade+Apple&family=Lacquer&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&family=Reenie+Beanie&family=Sen:wght@400..800&family=Supermercado+One&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @theme {
@@ -14,4 +15,20 @@
   --color-wych-lite:#efeef7;
   --color-wych-purple:#b7afda;
   --color-wych-rose: #d9adb5;
+
+  /* Fonts */
+  --font-are-you-serious: "Are You Serious", cursive;
+  --font-homemade-apple: "Homemade Apple", cursive;
+  --font-grand-hotel: "Grand Hotel", cursive;
+  --font-sen: "Sen", sans-serif;
+  --font-lacqeur: "Lacquer", system-ui;
+  --font-fascinate: "Fascinate", system-ui;
+  --font-reenie-beanie: "Reenie Beanie", cursive;
+  --font-supermercado-one: "Supermercado One", sans-serif;
+  --font-noto-sans-display: "Noto Sans Display", sans-serif;
+  --font-coral-pixels: "Coral Pixels", serif;
+  --font-petit-formal: "Petit Formal Script", cursive;
+  --font-alegreya: "Alegreya", serif;
+  --font-amaranth: "Amaranth", sans-serif;
+  --font-courier-prime:  "Courier Prime", monospace;
 }

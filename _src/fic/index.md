@@ -1,5 +1,12 @@
 ---
-title: Fanfics
-hidden: true
+title: fanfics
+hidden: true 
+layout: "main_page.vto"
 ---
-oh boy oh boy
+Oh man you should't be here
+
+uhhh
+
+uhh
+
+i don't know what else to say here

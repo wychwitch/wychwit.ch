@@ -1,38 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
- <title>{{ title }}</title>
- <link rel="stylesheet" href="/tailwind.css" />
- <link rel="stylesheet" href="/bitflipped.css" />
-  </head>
-  <body class="flex flex-col items-center bg-bf_bg">
-  <ul class="text-6xl lg:text-4xl menu w-100% flex flex-row justify-center mt-8">
-    {{ if url != "/" }}
-    <li class="w-fit h-fit ">
-      <a class=" underline p-2 rounded hover:text-primary" href="/">
-        Home
-      </a>
-    </li>
-    {{ /if }}
-    {{ for item of nav.menu().children }}
-      <li>
-        {{ include "./bitflipped_menu_item.vto" { item } }}
+{{layout "bitflipped_layout_wrapper.vto"}}
+<article class="min-h-30 text-xl/9 text-center lg:text-xl/8 my-10 font-bold">
+  {{ content }}
+</article>
+<ul class="next text-left text-3xl lg:text-3xl w-fit ">
+  {{ for item of nav.menu(url).children }}
+      <li class="my-2">
+          ><a class="underline" href={{item.data.url}}>{{item.data.basename}}.{{item.data.title}}</a>
       </li>
-    {{ /for }}
-  </ul>
-
-  <section class="mt-24 h-fit p-4 bg-bitflipped w-11/12 lg:w-1/2">
-    <article class="min-h-60 text-5xl/18 lg:text-2xl/10 my-10 font-bold">
-    {{ content }}
-    </article>
-    <ul class="next text-left text-6xl lg:text-4xl w-fit ml-50">
-    {{ for item of nav.menu(url).children }}
-    <li class="my-4">
-    ><a class="underline" href={{item.data.url}}>{{item.data.basename}}.{{item.data.title}}</a>
-    </li>
-    {{ /for }}
-    </ul>
-  </section>
-  </body>
-</html>
+  {{ /for }}
+</ul>
+{{/layout}}

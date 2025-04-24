@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="15.813229"
+   height="15.813229"
+   viewBox="0 0 20.161866 20.161866"
+   fill="none"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="checked-box.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect2333"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0.2,1.625625 | 1,1.625625 | 1.8,1.625625"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="round"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect1723"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0.2,1.275 | 1,1.275 | 1.8,1.275"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="round"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect847"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0.2,1 | 1,1 | 1.8,1"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="round"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="13.870209"
+     inkscape:cx="23.32337"
+     inkscape:cy="8.5434909"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0"
+     transform="translate(-1.9190668,-1.9190668)" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     transform="translate(-1.9190668,-1.9190668)" />
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="translate(-1.9190668,-1.9190668)">
+    <path
+       d="M 8,12.5 10.5,15 16,9 M 7.2,20 h 9.6 c 1.1201,0 1.6802,0 2.108,-0.218 0.3763,-0.1917 0.6823,-0.4977 0.874,-0.874 C 20,18.4802 20,17.9201 20,16.8 V 7.2 C 20,6.0799 20,5.51984 19.782,5.09202 19.5903,4.71569 19.2843,4.40973 18.908,4.21799 18.4802,4 17.9201,4 16.8,4 H 7.2 C 6.0799,4 5.51984,4 5.09202,4.21799 4.71569,4.40973 4.40973,4.71569 4.21799,5.09202 4,5.51984 4,6.07989 4,7.2 v 9.6 c 0,1.1201 0,1.6802 0.21799,2.108 0.19174,0.3763 0.4977,0.6823 0.87403,0.874 C 5.51984,20 6.07989,20 7.2,20 Z"
+       stroke="#b7afda"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       id="path4"
+       style="fill:none;fill-rule:nonzero;stroke:#b7afda;stroke-width:4.14534" />
+  </g>
+</svg>

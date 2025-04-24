@@ -64,15 +64,14 @@ site.use(tailwindcss({
   // Your Tailwind options, like the theme colors and fonts
   options: {
     plugins: [typography],
-      fontFamily: {
-        sans: ["Graphik", "sans-serif"],
-        serif: ["Merriweather", "serif"],
-      },
   },
 }));
 site.add("/tailwind.css")
 site.add("/styles.css")
 site.add("/bitflipped.css")
+site.add("/assets/star.svg")
+site.add("/assets/unchecked-box.svg")
+site.add("/assets/checked-box.svg")
 //site.use(purgecss());
 site.use(redirects());
 site.use(relations());

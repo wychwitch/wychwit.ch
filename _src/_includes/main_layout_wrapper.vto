@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+ <title>{{ title }}</title>
+ <link rel="stylesheet" href="/styles.css" />
+ <link rel="stylesheet" href="/tailwind.css" />
+  </head>
+  <body class="flex flex-col items-center bg-background">
+  <ul class="menu w-full flex flex-row justify-center">
+    {{ if url != "/" }}
+        {{ include "./menu_item.vto" { _url: "/", _title: "home", _hidden: false, _children: nil } }}
+    {{ /if }}
+    {{ for item of nav.menu().children }}
+        {{ include "./menu_item.vto" { _url: item.data.url, _title: item.data.title, _hidden: item.data.hidden, _children: item.children } }}
+    {{ /for }}
+  </ul>
+
+  {{content}}
+
+  </body>
+</html>

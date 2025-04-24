@@ -1,13 +1,16 @@
-{{ if item.data.url && !item.data.hidden}}
-  <a class="underline m-2 m-4 hover:text-primary" href="{{ item.data.url }}">
-    {{ item.data.title }}
+
+{{ if _url && !_hidden && _url !== url}}
+    <li class="w-fit h-fit ">
+  <a class="underline m-2 m-4 text-3xl hover:text-primary" href="{{ _url }}">
+    {{ _title }}
   </a>
+  </li>
 {{ /if }}
 
 <ul>
-  {{ for child of item.children }}
+  {{ for child of _children }}
   <li>
-    {{ include "./bitflipped_menu_item.vto" { item: child } }}
+    {{ include "bitflipped_menu_item.vto" { _url: child?.data?.url, _title: child?.data?.title, _hidden: child?.data?.hidden, _children: child?.children } }}
   </li>
   {{ /for }}
 </ul>
