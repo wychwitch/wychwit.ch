@@ -70,6 +70,7 @@ site.add("/tailwind.css")
 site.add("/styles.css")
 site.add("/bitflipped.css")
 site.add("/assets/star.svg")
+site.add("/assets/star-big.svg")
 site.add("/assets/unchecked-box.svg")
 site.add("/assets/checked-box.svg")
 //site.use(purgecss());

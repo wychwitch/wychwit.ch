@@ -1,11 +1,11 @@
 {{ layout "bitflipped_layout_wrapper.vto" }}
   <section class=" w-11/12 lg:w-1/2 h-fit m-2 mt-24 bg-bitflipped">
-    <article class="min-h-100 text-xl/9 lg:text-xl/8 my-10 font-bold">
+    <article class="min-h-100 text-5xl/18 lg:text-xl/7 my-10 font-bold w-full">
     {{ content }}
     </article>
   </section>
     {{ if nav.nextPage(url) }}
-    <div class="next text-6xl lg:text-4xl mb-14">
+    <div class="next text-6xl lg:text-4xl mb-100">
     ><a class="underline" href={{nav.nextPage(url).url}}>{{nav.nextPage(url).basename}}.{{nav.nextPage(url).title}}</a>
     </div>
     {{/if}}

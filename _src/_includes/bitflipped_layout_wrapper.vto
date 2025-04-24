@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="/bitflipped.css" />
   </head>
   <body class="flex flex-col items-center bg-bf_bg">
- <ul class="menu w-100% flex flex-row justify-center mt-1">
+ <ul class="menu w-full flex flex-row justify-center mt-1">
     {{ if url != "/" }}
         {{ include "./bitflipped_menu_item.vto" { _url: "/", _title: "home", _hidden: false, _children: nil } }}
     {{ /if }}
@@ -17,7 +17,7 @@
     {{ /for }}
   </ul>
 
- <div class="w-100% flex flex-col items-center mx-1">
+ <div class="w-full flex flex-col items-center mx-1">
   {{content}}
   </div>
   </body>

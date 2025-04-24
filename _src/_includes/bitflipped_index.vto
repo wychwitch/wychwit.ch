@@ -1,10 +1,10 @@
 {{layout "bitflipped_layout_wrapper.vto"}}
-<article class="min-h-30 text-xl/9 text-center lg:text-xl/8 my-10 font-bold">
+<article class="min-h-30 text-5xl/18 text-center lg:text-xl/8 my-10 font-bold mx-10">
   {{ content }}
 </article>
-<ul class="next text-left text-3xl lg:text-3xl w-fit ">
+<ul class="next text-left text-7xl lg:text-3xl w-fit ">
   {{ for item of nav.menu(url).children }}
-      <li class="my-2">
+      <li class="my-15 lg:my-2">
           ><a class="underline" href={{item.data.url}}>{{item.data.basename}}.{{item.data.title}}</a>
       </li>
   {{ /for }}
