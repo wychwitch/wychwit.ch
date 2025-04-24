@@ -3,6 +3,7 @@ import attributes from "lume/plugins/attributes.ts";
 import date from "lume/plugins/date.ts";
 import favicon from "lume/plugins/favicon.ts";
 import feed from "lume/plugins/feed.ts";
+import icons from "lume/plugins/icons.ts";
 import jsx from "lume/plugins/jsx.ts";
 import mdx from "lume/plugins/mdx.ts";
 import metas from "lume/plugins/metas.ts";
@@ -27,11 +28,12 @@ import toml from "lume/plugins/toml.ts";
 import typography from "npm:@tailwindcss/typography";
 import remark from "lume/plugins/remark.ts";
 import bitflipped_shortcodes from "./_src/_scripts/bitflipped_shortcodes.js";
-
+import inline from "lume/plugins/inline.ts";
 
 const markdown = {
   options: {
     breaks: true,
+    html: true,
   },
 };
 const site = lume({
@@ -47,10 +49,13 @@ site.use(favicon());
 site.use(feed());
 site.use(jsx());
 site.use(mdx());
+site.use(inline(/* Options */));
 site.use(metas());
 site.use(nav());
 site.use(pagefind());
 site.use(picture());
+site.use(icons(/* Options */));
+
 site.use(prism());
 site.use(tailwindcss({
       // Extract the classes from HTML and JSX files

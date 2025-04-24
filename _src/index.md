@@ -3,18 +3,23 @@ title: Wych Grimoire
 layout: main_index.vto
 ---
 
-# This is the index
-## hello
+# Wych's digimoire
+I'm wych! This is my site! Yahoo!
 
-wow wowie wowowowie this is a lot
+## How?? How did you make this
+I made this site using [Lume](https://lume.land/), a static site generator framework built on deno. I'm serving it using github pages! I spent way too much time on this.
 
-**hekl**
+## Is there anything on here?
 
-# owhat
+Not really. I plan on adding an articles section and hosting fics, but, man
 
-- yep
-- wow
+## Speaking of plans, why don't you post your to-do list for this site?
+Good idea! Thanks me!
 
-okay
-
-will this work
+- ☐ Reduce code repeating by making the templates share more code (please) 
+- ☐ Create articles section
+- ☐ Write first silly little fic
+- ☐ Make links page, and embed it here as well
+- ☐ Include latest bsky posts?? Maybe????
+- ☐ Put wychbug on here, somewhere
+- ☐ Make art! Again! And post it here maybe? Or host using the booru I miss
