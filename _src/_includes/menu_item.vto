@@ -6,12 +6,3 @@
   </a>
 </li>
 {{ /if }}
-
-
-<ul>
-  {{ for child of _children }}
-  <li>
-    {{ include "./menu_item.vto" { _url: child?.data?.url, _hidden: child?.data?.hidden, _title: child?.data?.title, _children: child?.data?.children } }}
-  </li>
-  {{ /for }}
-</ul>

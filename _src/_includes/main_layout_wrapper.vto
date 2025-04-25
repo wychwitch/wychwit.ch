@@ -12,6 +12,7 @@
     {{ if url != "/" }}
         {{ include "./menu_item.vto" { _url: "/", _title: "home", _hidden: false, _children: nil } }}
     {{ /if }}
+
     {{ for item of nav.menu().children }}
         {{ include "./menu_item.vto" { _url: item.data.url, _title: item.data.title, _hidden: item.data.hidden, _children: item.children } }}
     {{ /for }}

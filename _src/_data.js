@@ -4,15 +4,17 @@ const data = {
 }
 
 export function url(page){
+  if (page.data.basename.includes("index")){
+    return "./"
+  }
+
   let fic_num = page.data.basename.match(/^\d+/)
+
   if (fic_num){
     fic_num = fic_num[0]
-  }
-  if (fic_num > 0){
     return `./${fic_num}/`
-  } else if (fic_num == 0 || page.data.basename.includes("index")){
-    return "./"
-  } else {
+  }
+  else {
     return `./${page.data.basename}/`
   }
 }

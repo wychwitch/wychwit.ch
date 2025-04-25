@@ -1,7 +1,7 @@
 ---
-title: fanfics
+title: prose 
 hidden: true 
-layout: "main_page.vto"
+blurb: Prose written by me. Mostly fanfics haha whoops!
 ---
 Oh man you should't be here
 
