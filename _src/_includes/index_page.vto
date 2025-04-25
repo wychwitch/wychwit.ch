@@ -1,19 +1,21 @@
 {{layout "main_layout_wrapper.vto"}}
-<h1 class="font-coral-pixels text-wych-purple text-8xl lg:text-6xl mt-14">{ {{title}} }</h1>
-<section class="w-10/12 lg:w-1/2  mt-14 h-fit p-4">
-    <div class="prose prose-2xl prose-p:text-6xl/20 lg:prose-p:text-xl/8 prose-h2:text-7xl lg:prose-h2:text-3xl prose-headings:text-center prose-li:text-7xl lg:prose-li:text-xl/8 lg:prose-base prose-headings:text-wych-purple prose-li:list-image-[url(/assets/star-big.svg)] lg:prose-li:list-image-[url(/assets/star.svg)] prose-li:pl-0 prose-p:font-alegreya prose-li:font-alegreya lg:prose-p:indent-8">
+<section class="w-11/12 lg:w-1/2  mt-14 h-fit p-4 flex flex-col items-center ">
+
+    <div md:hidden block class="prose prose-2xl prose-p:text-xl/10 lg:prose-p:text-xl/8 prose-h2:text-7xl lg:prose-h2:text-3xl prose-headings:text-center prose-li:text-7xl lg:prose-li:text-xl/8 lg:prose-base prose-headings:text-wych-purple prose-li:list-image-[url(/assets/star-big.svg)] lg:prose-li:list-image-[url(/assets/star.svg)] prose-li:pl-0 prose-p:font-alegreya prose-li:font-alegreya lg:w-1/2 mt-10 mb-10">
          {{ content }}
     </div>
 
-    <div class="flex flex-col lg:flex-row w-full h-fit flex-wrap justify-around">
+    <div class="flex flex-col lg:flex-row w-full h-fit flex-wrap justify-around items-center lg:items-start">
         {{ for child of nav.menu(it.url).children }}
-           <a class="w-1/4 h-40 border-3 border-wych-purple border-solid my-3 mx-5 flex flex-col items-center rounded bg-white hover:bg-wych-rose p-4" href={{child.data.url}}>
-              <h3 class="text-xl">{{child.data.title}}</h3>
-              <p class="text-black font-normal font-alegreya">
+           <a class="w-full lg:w-1/4 h-fit h-45 border-5 lg:border-3 border-wych-purple border-solid my-3 mx-0 lg:mx-5 flex flex-col items-center rounded bg-white hover:bg-wych-rose p-4" href={{child.data.url}}>
+              <h3 class="text-xl lg:text-xl">{{child.data.title}}</h3>
+              <p class="text-xl lg:text-2xl text-black font-normal font-alegreya text-center">
                 {{child.data.blurb}}
               </p>
            </a>
        {{/for}}
     </div>
+
+
   </section>
 {{/layout}}

@@ -88,7 +88,7 @@ site.preprocess(['.md'], (pages) => {
         if (typeof page.data.content !== "string") {
             continue;
         }
-        if (page.src.path.startsWith('/fic/bitflipped')) {
+        if (page.src.path.startsWith('/corpus/prose/bitflipped')) {
            page.data.content = bitflipped_shortcodes(page.data.content);
         }
     }

@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,15 +9,26 @@
  <link rel="stylesheet" href="/tailwind.css" />
   </head>
   <body class="flex flex-col items-center bg-background">
-  <ul class="menu w-full flex flex-row justify-center">
-    {{ if url != "/" }}
-        {{ include "./menu_item.vto" { _url: "/", _title: "home", _hidden: false, _children: nil } }}
-    {{ /if }}
 
-    {{ for item of nav.menu().children }}
-        {{ include "./menu_item.vto" { _url: item.data.url, _title: item.data.title, _hidden: item.data.hidden, _children: item.children } }}
-    {{ /for }}
-  </ul>
+<h1 class="font-coral-pixels text-wych-purple text-3xl lg:text-6xl mt-14">{ {{title}} }</h1>
+{{if it.url !== "/"}}
+ <ul class="w-full flex flex-row flex-wrap justify-center mt-8 text-xl ">
+   {{ for item of nav.breadcrumb(url) }}
+   <li class=" before:ml-2 before:text-black before:content-['-'] before:text-2xl  first:before:content-['']">
+     {{ if item.data }}
+     <a class="text-wych-purple decoration-3 font-bold font-sen text-2xl lg:rounded underline p-2 rounded-xl hover:text-wych-rose" href="{{ item.data.url }}">
+       {{if item.data.url == "/"}}
+       home
+       {{else}}
+       {{ item.data.title }}
+       {{/if}}
+     </a>
+     {{ /if }}
+   </li>
+   {{ /for }}
+ </ul>
+ {{/if}}
+
 
   {{content}}
 

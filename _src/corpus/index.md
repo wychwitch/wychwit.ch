@@ -4,4 +4,4 @@ hidden: false
 layout: index_page.vto
 ---
 
-This is the collections of things that I have written. 
+This is a collection of things I've written!

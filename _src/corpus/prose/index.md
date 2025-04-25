@@ -2,11 +2,8 @@
 title: prose 
 hidden: true 
 blurb: Prose written by me. Mostly fanfics haha whoops!
+layout: index_page.vto
 ---
-Oh man you should't be here
+uhhh 
 
-uhhh
-
-uhh
-
-i don't know what else to say here
+leave!

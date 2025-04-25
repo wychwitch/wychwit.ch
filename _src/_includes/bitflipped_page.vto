@@ -5,7 +5,7 @@
     </article>
   </section>
     {{ if nav.nextPage(url) }}
-    <div class="next text-6xl lg:text-4xl mb-100">
+    <div class="next text-6xl lg:text-4xl">
     ><a class="underline" href={{nav.nextPage(url).url}}>{{nav.nextPage(url).basename}}.{{nav.nextPage(url).title}}</a>
     </div>
     {{/if}}
