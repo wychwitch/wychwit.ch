@@ -18,6 +18,8 @@ Good idea! Thanks me!
 
 -  Reduce code repeating by making the templates share more code (please) 
 -  Create articles section
+  - blog/Articles will include a changelog up top, to summarize changes and updates, and include a link to the repo to read older versions of the article.
+  - also include a symbol of how evergreen the article is, and the last time it was updated.
 -  Write first silly little fic
 -  Make links page, and embed it here as well
 -  Include latest bsky posts?? Maybe????
